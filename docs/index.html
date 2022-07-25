@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minimal.css | A Dead Simple Css Framework</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="feather.svg" type="image/x-icon" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Arkaneel/minimalcss@main/normalize.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Arkaneel/minimalcss@main/minimal.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Arkaneel/minimalcss@main/minimal.icon.css" />
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<script defer src="https://cdn.jsdelivr.net/gh/Arkaneel/minimalcss@main/minimal.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="twelve columns" style="margin-top:25%">
+<h4>A Dead Simple Css Framework</h4>
+</div>
+</div>
+<br />
+<br />
+<div class="row">
+<div class="twelve columns">
+<img class="" height="100px" src="feather.svg" />
+<p>
+Light Like a Feather about ~8kb (gzipped)
+</p>
+</div>
+</div>
+<br />
+<br />
+<div class="row">
+<div class="twelve columns">
+<img height="100px" src="responsive.svg" />
+<p>
+Responsiveness on the go.
+</p>
+</div>
+</div>
+<br />
+<br />
+<div class="row">
+<div class="twelve columns">
+<img height="100px" src="watch.svg" />
+<p>
+Quick to start with zero compiling or installing necessary.
+</p>
+</div>
+</div>
+<br />
+<br />
+<div class="row">
+<div class="twelve columns">
+<a href="https://github.com/Arkaneel/minimalcss/archive/refs/tags/Versions.tar.gz" class="button" download>Download</a>
+<br />
+<h6 style="margin-top:15%">Use CDN</h6>
+<br />
+<div class="row">
+<input id="foo" value='<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Arkaneel/minimalcss@main/normalize.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Arkaneel/minimalcss@main/minimal.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Arkaneel/minimalcss@main/minimal.icon.css"/>
+<script defer src="https://cdn.jsdelivr.net/gh/Arkaneel/minimalcss@main/minimal.js"></script>'/>
+<br />
+<br>
+<button class="button">Copy</button>
+</div>
+</div>
+</div>
+<div class="twelve columns">
+  <div class="row">
+    <p>As It's Based On <a href="http://getskeleton.com/">SkeletonCss</a> Please Read The Skeleton Documentation</p>
+    <a href="docs.html" style="color:black;">Documentation</a>
+    <br />
+    <br />
+  </div>
+</div>
+</div>
+<a href="https://github.com/Arkaneel/minimalcss">Github</a>
+<script>
+  const copy = document.querySelector('button');
+  copy.onclick = function(){
+    const value = document.getElementById('foo');
+   value.select();
+   value.setSelectionRange(0, 99999);
+   navigator.clipboard.writeText(value.value);
+   document.execCommand('copy');
+   alert("Copied CDN Successfully");
+  }
+</script>
+</script>
+</body>
+</html>

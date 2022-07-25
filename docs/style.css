@@ -1,0 +1,15 @@
+body{
+  text-align: center;
+}
+pre code{
+  word-break: inherit;
+}
+#foo{
+  width: 300px;
+}
+.button{
+  box-shadow: none;
+}
+.tukus{
+  height: 800px;
+}
